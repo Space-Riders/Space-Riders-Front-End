@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-import honey from "../../assets/honey.svg";
+//import honey from "../../assets/honey.svg";
+import honey from "../../assets/poop.svg";
 
 function Room({ room }) {
   return (
@@ -88,7 +89,7 @@ function Map({ currentRoom }) {
   return (
     <div
       style={{
-        background: "#F89500",
+        background: "#9F8303",
         display: "flex",
         flexDirection: "column",
         width: '550px',

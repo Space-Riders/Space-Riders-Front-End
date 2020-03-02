@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import bad from "../assets/bad.png";
-import ryder from "../assets/ryder.png";
+import ryder from "../assets/small_ryder.png";
 import "../styles/home.scss";
 
 function Home() {

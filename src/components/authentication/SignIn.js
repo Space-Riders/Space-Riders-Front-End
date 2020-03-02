@@ -34,7 +34,8 @@ function SignIn(props) {
     }
     axios
       // .post('http://localhost:8000/api/login/', user)
-      .post("https://mudierthegame.herokuapp.com/api/login/", user)
+      .post("https://space-ryders-be.herokuapp.com/api/adv/say/", user)
+      // .post("https://mudierthegame.herokuapp.com/api/login/", user)
       //.post("https://lambda-mud-test.herokuapp.com/", user)
       .then(res => {
         console.log(res);

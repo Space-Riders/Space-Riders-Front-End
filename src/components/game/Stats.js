@@ -33,7 +33,7 @@ function Stats(props) {
 					</Tooltip>
 				}
 			>
-				<p>How do battles work?</p>
+				<p>How do battles fail?</p>
 			</OverlayTrigger>
         </div>
     )

@@ -35,7 +35,8 @@ function Leaderboard() {
 
   useEffect(() => {
     axios
-      .get("https://mudierthegame.herokuapp.com/api/adv/leaderboard")
+      .get("https://space-ryders-be.herokuapp.com/api/adv/say/")
+      // .get("https://mudierthegame.herokuapp.com/api/adv/leaderboard")
       //.get("https://lambda-mud-test.herokuapp.com/")
       .then(res => {
         console.log("res:", res.data.topPlayers);

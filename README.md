@@ -4,10 +4,6 @@ Space Ryders is a MUD style game using React.js front-end and Python Django back
 Please visit the deployed front end [here](https://amazing-lewin-56da2a.netlify.com/)
 
 
-# References
-
-Front end inspired by 
-
-[Uno](https://github.com/CS-Build-Week-Uno/Front-End)
-
-[Muddier](https://github.com/muddier/front-end)
+## Special Thanks
+Kyle
+Derek

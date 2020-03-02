@@ -13,11 +13,9 @@ function Game() {
 
   useEffect(() => {
     // set the player in the intial room
-    axiosWithAuth()
-      // .get('http://localhost:8000/api/adv/init')
-      .get("https://space-ryders-be.herokuapp.com/api/adv/say/")
+    axiosWithAuth()      
+      .get("https://space-ryders-be.herokuapp.com/api/adv/init")
       // .get("https://mudierthegame.herokuapp.com/api/adv/init")
-      //.get("https://lambda-mud-test.herokuapp.com/")
       .then(res => {
         setCurrentRoom(res.data);
       })
@@ -32,9 +30,8 @@ function Game() {
       // .post('http://localhost:8000/api/adv/move', {
       //   direction
       // })
-      .post("https://space-ryders-be.herokuapp.com/api/adv/say/", {
+      .post("https://space-ryders-be.herokuapp.com/api/adv/move", {
       // .post("https://mudierthegame.herokuapp.com/api/adv/move", {
-      //.post("https://lambda-mud-test.herokuapp.com/", {
         direction
       })
       .then(res => {
@@ -47,10 +44,8 @@ function Game() {
 
   const teleport = () => {
     axiosWithAuth()
-      // .post('http://localhost:8000/api/adv/teleport')
       // .post("https://mudierthegame.herokuapp.com/api/adv/teleport")
-      //.post("https://lambda-mud-test.herokuapp.com/")
-      .post("https://space-ryders-be.herokuapp.com/api/adv/say/")
+      .post("https://space-ryders-be.herokuapp.com/api/adv/teleport")
       .then(res => {
         console.log("Teleport Res", res);
         setCurrentRoom(res.data);
@@ -62,10 +57,8 @@ function Game() {
 
   const xpBoost = xpBoost => {
     axiosWithAuth()
-      // .post('http://localhost:8000/api/adv/boost', xpBoost)
-      .post("https://space-ryders-be.herokuapp.com/api/adv/say/", xpBoost)
+      .post("https://space-ryders-be.herokuapp.com/api/adv/boost", xpBoost)
       // .post("https://mudierthegame.herokuapp.com/api/adv/boost", xpBoost)
-      //.post("https://lambda-mud-test.herokuapp.com/", xpBoost)
       .then(res => {
         console.log(res);
         // setCurrentRoom(res.data);
@@ -101,10 +94,8 @@ function Game() {
     }
 
     axiosWithAuth()
-      .post("https://space-ryders-be.herokuapp.com/api/adv/say/", {
-      // .post("https://space-ryders-be.herokuapp.com/api/adv/say/", {
+      .post("https://space-ryders-be.herokuapp.com/api/adv/battle", {
       // .post("https://mudierthegame.herokuapp.com/api/adv/battle", {
-      //.post("https://lambda-mud-test.herokuapp.com/", {
         honeyGained,
         xpGained
       })

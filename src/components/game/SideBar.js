@@ -45,7 +45,7 @@ function SideBar(props) {
       >
       Honey: {props.currentRoom.honey}
       </p> */}
-      <p style={{ color: "#F89500" }}>Players in the room:</p>
+      <p style={{ color: "#F89500" }}>Freedom Fighter in the room:</p>
       <ul
         style={{
           listStyleType: "none",

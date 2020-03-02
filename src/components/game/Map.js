@@ -53,8 +53,8 @@ function Map({ currentRoom }) {
   useEffect(() => {
     axiosWithAuth()
       // .get('http://localhost:8000/api/adv/matrix')
-      //.get("https://mudierthegame.herokuapp.com/api/adv/matrix")
-      .get("https://lambda-mud-test.herokuapp.com/")
+      .get("https://mudierthegame.herokuapp.com/api/adv/matrix")
+      //.get("https://lambda-mud-test.herokuapp.com/")
       .then(res => {
         // and 5 0's to the beginning of each row then, 
         // Hack function that's just adding 5 rows at the top of 0

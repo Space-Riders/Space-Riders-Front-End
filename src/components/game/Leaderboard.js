@@ -35,8 +35,8 @@ function Leaderboard() {
 
   useEffect(() => {
     axios
-      //.get("https://mudierthegame.herokuapp.com/api/adv/leaderboard")
-      .get("https://lambda-mud-test.herokuapp.com/")
+      .get("https://mudierthegame.herokuapp.com/api/adv/leaderboard")
+      //.get("https://lambda-mud-test.herokuapp.com/")
       .then(res => {
         console.log("res:", res.data.topPlayers);
         setLeaders(res.data.topPlayers);

@@ -10,8 +10,8 @@ const Message = () => {
     e.preventDefault();
 
     axiosWithAuth()
-      //.post("https://mudierthegame.herokuapp.com/api/adv/say/", { message })
-      .post("https://lambda-mud-test.herokuapp.com/", {message})
+      .post("https://mudierthegame.herokuapp.com/api/adv/say/", { message })
+      //.post("https://lambda-mud-test.herokuapp.com/", {message})
       .then(res => {
         setMessage("");
       })
@@ -54,8 +54,8 @@ function Chat({ roomId, charactersData }) {
   useEffect(() => {
     setChat([]);
 
-    //axiosWithAuth().post("https://mudierthegame.herokuapp.com/api/adv/say/", {
-    axiosWithAuth().post("https://lambda-mud-test.herokuapp.com/", {
+    axiosWithAuth().post("https://mudierthegame.herokuapp.com/api/adv/say/", {
+    //axiosWithAuth().post("https://lambda-mud-test.herokuapp.com/", {
       message: charactersData.description
     });
   }, [charactersData.description, roomId]);

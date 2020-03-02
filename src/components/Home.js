@@ -76,7 +76,7 @@ function Home() {
               padding: "10px 30px",
               textTransform: "uppercase"
             }}
-            to="/signin"
+            to="/game"
           >
             Escape Skewl
           </NavLink>

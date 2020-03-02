@@ -46,8 +46,8 @@ function SignUp(props) {
       return;
     }
     axios
-      // .post("https://mudierthegame.herokuapp.com/api/registration/", user)
-      .post("https://lambda-mud-test.herokuapp.com/", user)
+      .post("https://mudierthegame.herokuapp.com/api/registration/", user)
+      //.post("https://lambda-mud-test.herokuapp.com/", user)
       .then(res => {
         // console.log(res);
         setIsLoading(false);

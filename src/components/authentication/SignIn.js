@@ -34,8 +34,8 @@ function SignIn(props) {
     }
     axios
       // .post('http://localhost:8000/api/login/', user)
-      //.post("https://mudierthegame.herokuapp.com/api/login/", user)
-      .post("https://lambda-mud-test.herokuapp.com/", user)
+      .post("https://mudierthegame.herokuapp.com/api/login/", user)
+      //.post("https://lambda-mud-test.herokuapp.com/", user)
       .then(res => {
         console.log(res);
         setIsLoading(false);
@@ -130,7 +130,7 @@ function SignIn(props) {
           }}
         >
           <p>
-            New to Space Beez? Sign up{" "}
+            New to Space Ryderz? Sign the hell up{" "}
             <Nav.Link
               style={{ display: "inline", padding: "0" }}
               href="/signup"

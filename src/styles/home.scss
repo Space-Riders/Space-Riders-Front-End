@@ -1,0 +1,72 @@
+@keyframes circle {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes updown {
+  to {
+    transform: translateX(150px);
+  }
+}
+
+@keyframes updown2 {
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.animation-ctr {
+  background-image: url(https://public-media.si-cdn.com/filer/7f/4c/7f4c2d11-089f-4d86-8052-5cf95295be7e/file-20180531-69508-1oenzpj.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px auto;
+  position: relative;
+}
+
+#bad {
+  position: absolute;
+  width: 7%;
+  height: 40%;
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  display: block;
+  transform-origin: -100% center;
+  animation: circle 10s infinite linear;
+}
+
+#bad img:first-child {
+  width: 50%;
+  height: auto;
+  transform-origin: center top;
+  animation: updown 1ms infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+#bad img:last-child {
+  width: 50%;
+  height: auto;
+  transform-origin: center top;
+  animation: updown2 2ms infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+@keyframes bounce-4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+.ryder {
+  position: relative;
+  top: 375px;
+  left: 0px;
+  animation: bounce-4 0.5ms infinite alternate ease-in-out;
+}

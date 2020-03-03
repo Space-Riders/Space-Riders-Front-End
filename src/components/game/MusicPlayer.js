@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../styles/Chat.css";
 
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
@@ -26,9 +27,7 @@ const MusicPlayer = ({ url }) => {
   const [playing, toggle] = useAudio(url);
 
   return (
-    <div>
-      <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
-    </div>
+    <button className="btn-primary" onClick={toggle}>{playing ? "Pause" : "Play"}</button>
   );
 };
 

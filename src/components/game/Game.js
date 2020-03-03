@@ -6,8 +6,6 @@ import SideBar from "./SideBar";
 import Chat from "./Chat";
 import Actions from "./Actions";
 import Stats from "./Stats.js";
-import MusicPlayer from "./MusicPlayer.js";
-import soundfile from "../../assets/stranger_things.mp3"
 
 
 function Game() {
@@ -145,8 +143,6 @@ function Game() {
         <Actions teleport={teleport} xpBoost={xpBoost} />
       </div>
       <Chat roomId={currentRoom.roomId} charactersData={currentRoom} />
-      <MusicPlayer url={ soundfile } />
-
     </main>
   );
 }

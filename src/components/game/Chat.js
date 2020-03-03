@@ -3,6 +3,10 @@ import { Button, Form } from "react-bootstrap";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import PusherSubscription from "./Pusher";
 import "../styles/Chat.css";
+import MusicPlayer from "./MusicPlayer.js";
+import soundfile from "../../assets/stranger_things.mp3"
+
+
 const Message = () => {
   const [message, setMessage] = useState("");
 
@@ -96,6 +100,7 @@ function Chat({ roomId, charactersData }) {
         </div>
       </h5>
       <Message />
+      <MusicPlayer url={ soundfile } />
     </div>
   );
 }

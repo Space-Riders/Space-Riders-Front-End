@@ -24,7 +24,7 @@ function LeaderList({ leader }) {
       >
         {leader.username}
       </span>
-      <span style={{ textAlign: "center" }}>{leader.honey}</span>
+      <span style={{ textAlign: "center" }}>{leader.xerites}</span>
       <span style={{ textAlign: "center" }}>{leader.xp}</span>
     </div>
   );

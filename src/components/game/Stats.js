@@ -8,7 +8,7 @@ function Stats(props) {
         <div style={{display: 'flex', flexDirection: 'column'}}>
             <div className="player-stats">
                 <h4>{props.charactersData.name}</h4>
-                <p>Honey: {props.charactersData.honey}</p>
+                <p>Xerites: {props.charactersData.xerites}</p>
                 <p>XP: {props.charactersData.xp}</p>
             </div>
             <div className="stats-display">
@@ -18,8 +18,8 @@ function Stats(props) {
                     <p>Info: {props.charactersData.monster.description}</p>
                     <p>XP Gained When Beaten: {props.charactersData.monster.xpGained}</p>
                     <p>XP: {props.charactersData.monster.xp}</p>
-                    <p>Win Honey: {props.charactersData.monster.honeyGained}</p>
-                    <p>Lose Honey: {props.charactersData.monster.honeyLost}</p>
+                    <p>Win Xerites: {props.charactersData.monster.xeritesGained}</p>
+                    <p>Lose Xerites: {props.charactersData.monster.xeritesLost}</p>
                 </div>
                 <p>Battle Arena:
                     <p>Results: {props.battleRes.message}</p>

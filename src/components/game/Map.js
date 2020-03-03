@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-import honey from "../../assets/asdf.svg";
+import xerites from "../../assets/xerites.svg";
 
 function Room({ room }) {
   return (
     <>
       {room ? (
         <img
-          src={honey}
-          alt="honeycomb"
+          src={xerites}
+          alt="xerites"
           style={{
             height: "40px",
             width: "40px",

@@ -6,6 +6,9 @@ import SideBar from "./SideBar";
 import Chat from "./Chat";
 import Actions from "./Actions";
 import Stats from "./Stats.js";
+import MusicPlayer from "./MusicPlayer.js";
+import soundfile from "../../assets/stranger_things.mp3"
+
 
 function Game() {
   const [currentRoom, setCurrentRoom] = useState({});
@@ -58,7 +61,7 @@ function Game() {
   };
 
   const attackMonster = () => {
-    let honeyGained = null;
+    let xeritesGained = null;
     let xpGained = currentRoom.monster.xpGained;
     let playerWeight = currentRoom.xp;
     let monsterWeight = currentRoom.monster.xp;
@@ -66,29 +69,29 @@ function Game() {
     let monsterRoll = Math.random() * monsterWeight;
 
     playerRoll > monsterRoll
-      ? (honeyGained = currentRoom.monster.honeyGained)
-      : (honeyGained = -currentRoom.monster.honeyLost);
+      ? (xeritesGained = currentRoom.monster.xeritesGained)
+      : (xeritesGained = -currentRoom.monster.xeritesLost);
 
-    if (honeyGained > 0) {
-      alert(`You won! You just gained ${honeyGained} honey and ${xpGained} xp`);
+    if (xeritesGained > 0) {
+      alert(`You won! You just gained ${xeritesGained} xerites and ${xpGained} xp`);
     } else {
       alert(
         `Oh no! The ${
           currentRoom.monster.name
-        } beat you! You lost  ${-honeyGained} honey.`
+        } beat you! You lost  ${-xeritesGained} xerites.`
       );
     }
 
     axiosWithAuth()
       .post("https://space-ryders-be.herokuapp.com/api/adv/battle", {
-        honeyGained,
+        xeritesGained,
         xpGained
       })
       .then(res => {
         setCurrentRoom({
           ...currentRoom,
           xp: res.data.xp,
-          honey: res.data.honey
+          xerites: res.data.xerites
         });
         setBattleRes(res.data);
       })
@@ -142,6 +145,8 @@ function Game() {
         <Actions teleport={teleport} xpBoost={xpBoost} />
       </div>
       <Chat roomId={currentRoom.roomId} charactersData={currentRoom} />
+      <MusicPlayer url={ soundfile } />
+
     </main>
   );
 }

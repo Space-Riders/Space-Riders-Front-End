@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import bad from "../assets/bad.png";
-import ryder from "../assets/small_ryder.png";
+import bad from "../assets/flying_circle.png";
+import ryder from "../assets/mship1.png";
 import "../styles/home.scss";
 
 function Home() {
@@ -18,8 +18,7 @@ function Home() {
           padding: "25px",
           margin: "30px auto 50px auto",
           backgroundColor: "black",
-          backgroundImage:
-            "url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701863015-1200x675.jpg)",
+          backgroundImage: "../assets/home_bg.png",
           backgroundSize: "contain",
           maxWidth: "1225px"
         }}

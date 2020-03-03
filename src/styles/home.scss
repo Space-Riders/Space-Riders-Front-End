@@ -17,7 +17,7 @@
 }
 
 .animation-ctr {
-  background-image: url(https://public-media.si-cdn.com/filer/7f/4c/7f4c2d11-089f-4d86-8052-5cf95295be7e/file-20180531-69508-1oenzpj.png);
+  background-image: url(https://i.ytimg.com/vi/8mgmFNAIeGY/maxresdefault.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 400px auto;
@@ -26,8 +26,8 @@
 
 #bad {
   position: absolute;
-  width: 7%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
   top: 0;
   left: 20%;
   bottom: 0;
@@ -35,7 +35,7 @@
   margin: auto;
   position: absolute;
   display: block;
-  transform-origin: -100% center;
+  transform-origin: -35% center;
   animation: circle 10s infinite linear;
 }
 
@@ -43,7 +43,7 @@
   width: 50%;
   height: auto;
   transform-origin: center top;
-  animation: updown 1ms infinite alternate ease-in-out;
+  animation: updown 1s infinite alternate ease-in-out;
   margin-top: 10%;
 }
 
@@ -51,7 +51,7 @@
   width: 50%;
   height: auto;
   transform-origin: center top;
-  animation: updown2 2ms infinite alternate ease-in-out;
+  animation: updown2 2s infinite alternate ease-in-out;
   margin-top: 10%;
 }
 
@@ -60,13 +60,13 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-200px);
+    transform: translateY(-50px);
   }
 }
 
 .ryder {
   position: relative;
-  top: 375px;
+  top: 350px;
   left: 0px;
-  animation: bounce-4 0.5ms infinite alternate ease-in-out;
+  animation: bounce-4 1s infinite alternate ease-in-out;
 }

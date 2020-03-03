@@ -1,6 +1,6 @@
 import React from "react";
-//import spaceBear from '../../assets/small_ryder.png';
-import spaceBear from '../../assets/mship1.png';
+import mship from '../../assets/mship1.png';
+
 function Player() {
   return (
     <div
@@ -18,8 +18,8 @@ function Player() {
       }}
     >
       <img 
-      src={spaceBear}
-      alt="space bear"
+      src={mship}
+      alt="mship"
       />
     </div>
   );

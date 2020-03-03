@@ -47,10 +47,7 @@ function SignUp(props) {
     }
     axios
       .post("https://space-ryders-be.herokuapp.com/api/registration/", user)
-      // .post("https://mudierthegame.herokuapp.com/api/registration/", user)
-      //.post("https://lambda-mud-test.herokuapp.com/", user)
       .then(res => {
-        // console.log(res);
         setIsLoading(false);
         localStorage.setItem("key", res.data.key);
         props.history.push("/game");

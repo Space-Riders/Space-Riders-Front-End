@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-//import honey from "../../assets/honey.svg";
-import honey from "../../assets/poop.svg";
+import honey from "../../assets/asdf.svg";
 
 function Room({ room }) {
   return (
@@ -34,7 +33,6 @@ function Room({ room }) {
 
 function Row({ row, x_coor}) {
 
-  // const x = x_coor - 5 >= 0 ? x_coor - 5 : 0;
   const x = x_coor
 
   return (
@@ -54,7 +52,6 @@ function Map({ currentRoom }) {
   useEffect(() => {
     axiosWithAuth()
       .get("https://space-ryders-be.herokuapp.com/api/adv/matrix")
-      // .get("https://mudierthegame.herokuapp.com/api/adv/matrix")
       .then(res => {
         // and 5 0's to the beginning of each row then, 
         // Hack function that's just adding 5 rows at the top of 0
@@ -82,7 +79,6 @@ function Map({ currentRoom }) {
       });
   }, []);
 
-  // const y_coor = currentRoom.y_coor - 5 >= 0 ? currentRoom.y_coor - 5 : 0;
   const y_coor = currentRoom.y_coor
 
   return (
@@ -93,7 +89,10 @@ function Map({ currentRoom }) {
         flexDirection: "column",
         width: '550px',
         height: '550px',
-        borderRadius: "5px 0 0 5px"
+        borderRadius: "5px 0 0 5px",
+        backgroundImage:
+            "url(https://media.discordapp.net/attachments/683139552172703749/684195993641680910/Nebula_Blue.png)",
+        backgroundSize: "contain",
       }}
     >
       {rooms.slice(y_coor, (y_coor + 11)).map((row, index) => {

@@ -33,15 +33,11 @@ function SignIn(props) {
       return;
     }
     axios
-      // .post('http://localhost:8000/api/login/', user)
       .post("https://space-ryders-be.herokuapp.com/api/login/", user)
-      // .post("https://mudierthegame.herokuapp.com/api/login/", user)
-      //.post("https://lambda-mud-test.herokuapp.com/", user)
       .then(res => {
         console.log(res);
         setIsLoading(false);
         localStorage.setItem("key", res.data.key);
-        //TO DO - game component
         props.history.push("/game");
       })
       .catch(err => {

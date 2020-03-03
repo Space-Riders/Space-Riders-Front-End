@@ -22,8 +22,9 @@ const PusherSubscription = ({ roomId, setChat }) => {
             setChat(oldData => [...oldData, data ])
         });
 
-		return () => pusher.unsubscribe(`room-${roomId}`)
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+        return () => pusher.unsubscribe(`room-${roomId}`)
+        // The below line squelchs a warning message by npm start
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [roomId])
 	
 	return null

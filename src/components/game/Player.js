@@ -1,5 +1,6 @@
 import React from "react";
-import spaceBear from '../../assets/small_ryder.png';
+//import spaceBear from '../../assets/small_ryder.png';
+import spaceBear from '../../assets/mship1.png';
 function Player() {
   return (
     <div

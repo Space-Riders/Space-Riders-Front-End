@@ -48,14 +48,14 @@ function Home() {
           <p>
             It is a period of civil wars in the galaxy. A brave alliance 
             of underground machine learning engineers has challenged the 
-            tyrany and oppression of the grusome BETA SKEWL CS DUN.
+            tyrany and oppression of the grusome BETA SKEWL CS.
           </p>
           <p>
-            Striking from a fortress hidden channel among the billion channel of 
-            Slack, rebel learning machines have won their first battle in a battle
-            with the powerful React JavaScript. The SKEWL fears that another defeat
-            could bring a thousand more students into the rebellion, and imperial
-            control over the SKEWL would have lost forever.
+            Striking from a hidden channel fortress among the billions of channels on
+            Slack, rebel machine learnig engineers have won their first battle in a 
+            battle with the powerful React JavaScript. The SKEWL fears that another 
+            defeat could bring a thousand more students into the rebellion, and 
+            imperialcontrol over the SKEWL would have lost forever.
           </p>
           <p>
             To crush the machine learning rebellion once and for all, the SKEWL

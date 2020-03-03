@@ -10,26 +10,26 @@ const Actions = ({ teleport, xpBoost }) => {
 				placement='top'
 				overlay={
 					<Tooltip id='tooltip-teleport'>
-						Costs 50 Honey
+						Costs 50 Xerites
 					</Tooltip>
 				}
 			>
 				<Button onClick={(e) => {
-					alert('Teleporting now!')
+					alert('Warp Speeding now!!')
 					teleport(e)
-					}} variant="secondary">Teleport</Button>
+					}} variant="secondary">Wrap Speed</Button>
 			</OverlayTrigger>
 			<OverlayTrigger
 				placement='top'
 				overlay={
 					<Tooltip id='tooltip-teleport'>
-						Permenant XP increase. Costs 250 Honey
+						You spending 250 Xerites for a permenant XP increase for nothing.
 					</Tooltip>
 				}
 				
 			>
 				<Button onClick={() => {
-					alert('You are spending 250 honey to get 10 xp')
+					alert('Why would you trade 250 Xerites for 10 xp?')
 					xpBoost({'cost': 250, 'xp': 10, 'temp': 0}
 					)}} variant="secondary"> 10 XP boost</Button>
 			</OverlayTrigger>
@@ -37,27 +37,27 @@ const Actions = ({ teleport, xpBoost }) => {
 				placement='top'
 				overlay={
 					<Tooltip id='tooltip-teleport'>
-						Extra XP for 3 minutes. Costs 200 Honey
+						Three minutes of Extra XP with 200 Xerites. GRIND NOW.
 					</Tooltip>
 				}
 			>
 				<Button onClick={() => {
-					alert('You are spending 250 honey to get a 50 XP boost for 3 minutes')
+					alert('250 Xerites for a 50 XP boost for 3 minutes. You nuts?')
 					xpBoost({'cost': 200, 'xp': 50, 'temp': 180})
-				}} variant="secondary">Temp 50 XP boost</Button>
+				}} variant="secondary">Temporary 50 XP boost</Button>
 			</OverlayTrigger>
 			<OverlayTrigger
 				placement='top'
 				overlay={
 					<Tooltip id='tooltip-teleport'>
-						Extra XP for 3 minutes. Costs 1000 Honey
+						Extra XP for 3 minutes. Costs 1000 Xerites
 					</Tooltip>
 				}
 			>
 				<Button onClick={() => {
-					alert('You are spending 1000 honey to get 500 XP boost for 3 minutes')
+					alert('Spending 1000 Xerites for 500 XP boost. You for real?')
 					xpBoost({'cost': 1000, 'xp': 500, 'temp': 180})
-					}} variant="secondary">Temp 500 XP boost</Button>
+					}} variant="secondary">Temporary 500 XP boost</Button>
 			</OverlayTrigger>
 		</Row>
 		</>

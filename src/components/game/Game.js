@@ -15,7 +15,6 @@ function Game() {
     // set the player in the intial room
     axiosWithAuth()      
       .get("https://space-ryders-be.herokuapp.com/api/adv/init")
-      // .get("https://mudierthegame.herokuapp.com/api/adv/init")
       .then(res => {
         setCurrentRoom(res.data);
       })
@@ -27,11 +26,7 @@ function Game() {
   const moveRooms = (e, direction) => {
     e.preventDefault();
     axiosWithAuth()
-      // .post('http://localhost:8000/api/adv/move', {
-      //   direction
-      // })
       .post("https://space-ryders-be.herokuapp.com/api/adv/move", {
-      // .post("https://mudierthegame.herokuapp.com/api/adv/move", {
         direction
       })
       .then(res => {
@@ -44,7 +39,6 @@ function Game() {
 
   const teleport = () => {
     axiosWithAuth()
-      // .post("https://mudierthegame.herokuapp.com/api/adv/teleport")
       .post("https://space-ryders-be.herokuapp.com/api/adv/teleport")
       .then(res => {
         console.log("Teleport Res", res);
@@ -58,17 +52,9 @@ function Game() {
   const xpBoost = xpBoost => {
     axiosWithAuth()
       .post("https://space-ryders-be.herokuapp.com/api/adv/boost", xpBoost)
-      // .post("https://mudierthegame.herokuapp.com/api/adv/boost", xpBoost)
       .then(res => {
         console.log(res);
-        // setCurrentRoom(res.data);
-        //
-        // PUT SETTIMEOUT HERE to decrement the temporary boost
-        // You can use (xpBoost.temp !== 0){ setTimeout(() => xp - xpBoost.xp)}
       });
-    // .catch(err => {
-    //   console.log(err.response);
-    // });
   };
 
   const attackMonster = () => {
@@ -95,7 +81,6 @@ function Game() {
 
     axiosWithAuth()
       .post("https://space-ryders-be.herokuapp.com/api/adv/battle", {
-      // .post("https://mudierthegame.herokuapp.com/api/adv/battle", {
         honeyGained,
         xpGained
       })

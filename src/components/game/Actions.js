@@ -17,7 +17,7 @@ const Actions = ({ teleport, xpBoost }) => {
 				<Button onClick={(e) => {
 					alert('Warp Speeding now!!')
 					teleport(e)
-					}} variant="secondary">Wrap Speed</Button>
+					}} variant="secondary">Warp Speed</Button>
 			</OverlayTrigger>
 			<OverlayTrigger
 				placement='top'

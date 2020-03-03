@@ -14,9 +14,7 @@ const Message = () => {
     e.preventDefault();
 
     axiosWithAuth()
-      //.post("https://mudierthegame.herokuapp.com/api/adv/say/", { message })
       .post("https://space-ryders-be.herokuapp.com/api/adv/say/", { message })
-      //.post("https://lambda-mud-test.herokuapp.com/", {message})
       .then(res => {
         setMessage("");
       })
@@ -60,8 +58,6 @@ function Chat({ roomId, charactersData }) {
     setChat([]);
 
     axiosWithAuth().post("https://space-ryders-be.herokuapp.com/api/adv/say/", {
-    // axiosWithAuth().post("https://mudierthegame.herokuapp.com/api/adv/say/", {
-    //axiosWithAuth().post("https://lambda-mud-test.herokuapp.com/", {
       message: charactersData.description
     });
   }, [charactersData.description, roomId]);

@@ -60,8 +60,8 @@ function Leaderboard() {
           background: "black"
         }}
       >
-        <span style={{ textAlign: "left", marginLeft: "15px" }}>SUCKER</span>
-        <span style={{ textAlign: "center" }}>DUN</span>
+        <span style={{ textAlign: "left", marginLeft: "15px" }}>Suckers</span>
+        <span style={{ textAlign: "center" }}>Xerites</span>
         <span style={{ textAlign: "center" }}>XP</span>
       </div>
       {leaders.map((leader, index) => {

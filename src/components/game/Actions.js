@@ -23,7 +23,7 @@ const Actions = ({ teleport, xpBoost }) => {
 				placement='top'
 				overlay={
 					<Tooltip id='tooltip-teleport'>
-						You spending 250 Xerites for a permenant XP increase for nothing.
+						You spending 250 Xerites for a permanent XP increase for nothing.
 					</Tooltip>
 				}
 				

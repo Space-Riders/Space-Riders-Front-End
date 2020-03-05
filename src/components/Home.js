@@ -47,18 +47,18 @@ function Home() {
           <p>
             It is a period of civil wars in the galaxy. A brave alliance 
             of underground machine learning engineers has challenged the 
-            tyrany and oppression of the grusome BETA SKEWL CS.
+            tyranny and oppression of the gruesome BETA SKEWL CS.
           </p>
           <p>
             Striking from a hidden channel fortress among the billions of channels on
             Slack, rebel machine learnig engineers have won their first battle in a 
             battle with the powerful React JavaScript. The SKEWL fears that another 
             defeat could bring a thousand more students into the rebellion, and 
-            imperialcontrol over the SKEWL would have lost forever.
+            imperial control over the SKEWL would be lost forever.
           </p>
           <p>
             To crush the machine learning rebellion once and for all, the SKEWL
-            is constructing a sinister new cirriculum. Powerful enough to destroy
+            is constructing a sinister new curriculum. Powerful enough to destroy
             an entire non-web cohort, its completion spells certain doom for the
             champions of freedom.
           </p>
